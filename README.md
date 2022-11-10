@@ -18,6 +18,7 @@ Tools yang digunakan :
 ![image](https://user-images.githubusercontent.com/117799202/201160967-e91c1e9e-2dfc-48b3-a12c-8e3171ca8c57.png)
 
 3. Buka pom.xml dan add dependency ini
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -106,6 +107,7 @@ Tools yang digunakan :
         </plugins>
     </build>
 </project>
+```
 
 4. Tambahkan Webdriver (disini saya menggunakan ChromeDriver dan bisa di download di "https://chromedriver.chromium.org/downloads") lalu buat Directory driver dan simpan ChromeDriver
 
@@ -130,6 +132,7 @@ Feature: Select Menu
 ![image](https://user-images.githubusercontent.com/117799202/201162396-84e48c62-4889-4213-94fb-1bd0a7e92968.png)
 
 8. Isi scenario di java code nya seperti dibawah ini ya
+```
 package StepDef;
 
 import cucumber.api.java.en.And;
@@ -214,6 +217,7 @@ public class SelectMenu {
         Thread.sleep(8000);
     }
 }
+```
 
 9. Hover pada feature file dan klik Run
 
