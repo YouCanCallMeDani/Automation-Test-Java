@@ -26,7 +26,7 @@ Tools yang digunakan :
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>automation-bdd-google</artifactId>
+    <artifactId>test-qa</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -35,22 +35,19 @@ Tools yang digunakan :
     </properties>
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>6.9.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.1</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+        
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
@@ -58,21 +55,18 @@ Tools yang digunakan :
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+        
         <dependency>
             <groupId>net.masterthought</groupId>
             <artifactId>cucumber-reporting</artifactId>
             <version>5.4.0</version>
         </dependency>
-
-
+        
     </dependencies>
 
     <build>
@@ -97,7 +91,7 @@ Tools yang digunakan :
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>automation-bdd-google</projectName>
+                            <projectName>test-qa</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
                         </configuration>
